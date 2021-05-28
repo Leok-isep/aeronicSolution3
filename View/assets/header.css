@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'oumgouleh';
+  src: url('Ressources/Font/Avenir.ttc');
+}
+
+* {
+  font-family: 'oumgouleh';
+}
+
+nav {
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    background-color: white;
+    display: flex;
+    height: 4em;
+    width: 100%;
+    box-shadow: 0px 0px 10px #636e72;
+    z-index: 3;
+  }
+  
+  /* Style of the topnav links */
+  .logoC{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+  }
+  .linkC {
+    padding-right:2em;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  
+  }
+  .linkC a{
+    color :#636e72;
+    text-decoration: none;
+    font-family: 'oumgouleh';
+    font-size: 1.4em;
+  }
+  
+  .linkC a:hover{
+    color: #74B2E1;
+    border-bottom: #636e72 3px solid;
+  }
+  
+  .connexionC{
+    height: 4em;
+    width: 14%;
+    text-align: center;
+    margin-right: 1em;
+  }
+  .IMGC {
+    width: 100%;
+    height: 4em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .IMGC img{
+    width: 2em;
+    height: 2em;
+    margin: auto;
+    z-index: 4;
+  }
+
+  .menuDPasConnecte, .menuDConnecte {
+
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 1.05em;
+    border-bottom-right-radius: 1.05em;
+    visibility: hidden;
+    box-shadow: 0px 3px 10px -7px #636e72;
+  }
+  .menuDPasConnecte{
+    height: 6em;
+  }
+
+.menuDConnecte{
+  height: 12em;
+}
+  
+  .menuDPasConnecte a, .menuDConnecte a{
+    text-decoration: none;
+  
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .bt1{
+    height: 2.1em;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.05em;
+  }
+  .bt2{
+    height: 2.1em;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.05em;
+  }
+  
+  .bt1{
+    background:white;
+    box-shadow: 0px 0px 10px #bdc3c7;
+  }
+  .bt2{
+    background-color: #54a0ff;
+  }
+  .bt1 a{
+    color:black;
+  }
+  .bt2 a{
+    color: white;
+  }
+  
+  .bt1:hover{
+    box-shadow: inset 0px 0px 10px #d1d8e0;
+  }
+  
+  .bt2:hover{
+    box-shadow: inset 0px 0px 25px #4180ce;
+  }
+
+  .connexionC:hover .menuDPasConnecte, .connexionC:hover .menuDConnecte  {
+    visibility: visible;
+  }
