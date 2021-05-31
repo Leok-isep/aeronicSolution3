@@ -1,8 +1,8 @@
 <?php
     define('HOST','localhost');
-    define('DB_NAME','aeronicsolutions');
-    define('USER','root');
-    define('PASS','');
+    define('DB_NAME','ttwawain_aeronicsolutions');
+    define('USER','aeronicsolutions');
+    define('PASS','aeronicsolutions1');
 
     try {
         $db = new PDO("mysql:host=" .HOST . ";dbname=" . DB_NAME, USER, PASS);
