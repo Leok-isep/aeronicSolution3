@@ -1,1 +1,0 @@
-<?php header('Location: controller/accueilController.php');exit; ?>
