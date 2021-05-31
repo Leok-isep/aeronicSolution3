@@ -11,7 +11,7 @@ if (isset($_POST['envoi'])) {
     $subject = "Nouveau mot de passe Aeronic Solutions";
     $message1 = "Vous trouverez dans ce mail, un lien de redirection qui vous permettra de redéfinir votre nouveau mot de passe afin que vous puissiez vous connecter sur le site. 
     Veuillez cliquer sur le lien pour le nouveau mot de passe : ";
-    $message2 = "<a href='http://localhost/aeronicsolutions/controller/nouveauMdpController.php'>Nouveau mot de passe</a>";
+    $message2 = "<a href='https://aeronicsolution.tk/controller/nouveauMdpController.php'>Nouveau mot de passe</a>";
     $message = $message1 . $message2;
     $headers = "De :" . $from;
     $headers = "MIME-Version: 1.0" . "\r\n";
