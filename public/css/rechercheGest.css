@@ -1,0 +1,245 @@
+body{
+  margin : 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@font-face {
+  font-family: 'oumgouleh';
+  src: url('../fonts/Avenir.ttc')format('truetype');
+}
+
+p,h3,h2,h1{
+  font-family: 'oumgouleh';
+}
+
+.container{
+  margin-top: 8em;
+width: 90%;
+display: flex;
+height: 75%;
+flex-direction: column;
+border-radius: 1em;
+position: relative;
+overflow: hidden;
+background-color: white;
+box-shadow: 0px 0px 10px #bdc3c7;
+}
+
+.info_container{
+  height: 5em;
+  background-color: #54a0ff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_container h1{
+  color: white;
+  font-size: 2em;
+}
+
+.search_bar_container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 4em;
+  margin-left: 30%;
+  width: 40%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+
+
+.searchbar  {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  height:90%;
+  width: 75%;
+  box-shadow: 0px 0px 10px #bdc3c7;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: none;
+  outline: none;
+  font-family: 'oumgouleh';
+  font-family: sans-serif;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2em;
+}
+
+.barre_boutton{
+  background-color:white ;
+  width: 25%;
+  height: 100%;
+  border-top-right-radius:2em ;
+  border-bottom-right-radius: 2em;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #bdc3c7;
+
+}
+
+.barre_boutton input:hover{
+  box-shadow: inset 0px 0px 25px #4180ce;
+}
+
+.barre_boutton input{
+  background-color:#54a0ff ;
+  font-size: 1vw;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  overflow: hidden;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #bdc3c7;
+  text-decoration: none;
+}
+
+input:focus{
+  border: 1.5px solid #54a0ff; 
+}
+  
+input:hover{
+  border: 1.5px solid #54a0ff;
+}
+
+input:active{
+  border: 1.5px solid #54a0ff;
+}
+
+.gestionnaireM{
+  width: 100%;
+  height: 4em;
+
+  box-shadow: 0px 0px 10px #bdc3c7;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #54a0ff;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+
+.gestionnaireM button{
+  height: 80%;
+  margin:1%;
+  border-radius: 2.5em;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+  background-color: white;
+  text-align: center;
+  width: 15em;
+  font-size: 1.2em;
+
+}
+
+.gestionnaireM select{
+  height: 80%;
+  margin:1%;
+  border-top-left-radius: 2.5em;
+  border-bottom-left-radius: 2.5em;
+  
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+  background-color: white;
+  text-align: center;
+  width: 15em;
+  font-size: 1.2em;
+}
+
+.gestionnaireM  button:hover{
+  box-shadow: inset 0px 0px 10px #d1d8e0;
+}
+
+.tableau_container {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+.tableau_container thead{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.tbody_container{
+  width: 80%;
+  overflow-y:visible;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: auto;
+  margin-left:10%;
+  margin-bottom : 2em;
+  border-radius: 1em;
+  margin-top: 1em;
+  margin-bottom: 6em;
+  box-shadow: 0px 0px 10px #bdc3c7;
+}
+
+.tableau_container a{
+  text-decoration: none;
+  color: black;
+}
+
+.tableau_container a:hover{
+  color: #54a0ff;
+}
+
+.tableau_container thead th {
+  background-color: #54a0ff;
+  color: white;
+  text-align: center;
+  height: 3em;
+  font-size:1.2em;
+}
+
+.tableau_container tbody td {
+  color: #333;
+  height: 3em;
+  text-align: center;
+}
+
+.tableau_container tr:nth-child(odd) {
+  background: #F8F8F8;
+  border-right: 1px solid #E6E4E4;
+}
+
+.tableau_container tr:nth-child(even) {
+    border-right: 1px solid #E6E4E4;
+}
+
+.espace{
+  min-height: 10em;
+}

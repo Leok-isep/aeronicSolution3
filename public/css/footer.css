@@ -1,0 +1,63 @@
+* {
+  font-family: 'oumgouleh';
+}
+
+.footer {
+  background-color: #54a0ff;
+  color:white;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.confidentialites{
+  overflow: hidden;
+  background-color: #54a0ff;
+  text-align: middle;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Style the topnav links */
+.confidentialites a , .reseaux a{
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 1em;
+}
+
+/* Change color on hover */
+.confidentialites a:hover {
+  background-color: #FFFFFF;
+  color:#74B2E1;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+}
+
+.barreimage{
+  width:100%;
+  height:200px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reseaux img{
+  width:7em;
+  height: 100%;
+  margin : 6px;
+}
