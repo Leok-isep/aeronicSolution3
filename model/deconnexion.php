@@ -2,5 +2,5 @@
     session_start();
     session_destroy();
     session_unset();
-    header("location:../Controller/accueilController.php");exit;
+    header("location:../controller/accueilController.php");exit;
 ?>
